@@ -14,10 +14,10 @@ module.exports = function (grunt) {
 
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
-    sprite: 'grunt-spritesmith',
-    foo: '@abc/grunt-foo',        // for private modules.
-    bar: 'custom/bar.js'          // for custom tasks.
-    buildcontrol: 'grunt-build-control'
+      useminPrepare: 'grunt-usemin',
+      ngtemplates: 'grunt-angular-templates',
+      cdnify: 'grunt-google-cdn',
+      buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths for the application
@@ -29,23 +29,24 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
-    // Project settings
-    yeoman: appConfig,
+        // Project settings
+        yeoman: appConfig,
 
-    buildcontrol: {
-     options: {
-       dir: 'dist',
-       commit: true,
-       push: true,
-       message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-     },
-     pages: {
-       options: {
-         remote: 'git@github.com:derekoh93/angular_app.git',
-         branch: 'gh-pages'
-       }
-     }
-   },
+        buildcontrol: {
+          options: {
+            dir: 'dist',
+            commit: true,
+            push: true,
+            message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+          },
+          pages: {
+            options: {
+              remote: 'git@github.com:your_github_user/your_webapp.git',
+              branch: 'gh-pages'
+            }
+          }
+        },
+
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
