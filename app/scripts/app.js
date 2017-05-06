@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('angularAppApp', [
+  .module('TrafficApp', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
