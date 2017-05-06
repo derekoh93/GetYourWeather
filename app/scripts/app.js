@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc overview
- * @name angularAppApp
+ * @name TrafficApp
  * @description
- * # angularAppApp
+ * # TrafficApp
  *
  * Main module of the application.
  */
