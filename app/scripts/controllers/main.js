@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name angularAppApp.controller:MainCtrl
+ * @name TrafficApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the angularAppApp
+ * Controller of the TrafficApp
  */
-angular.module('angularAppApp')
+angular.module('TrafficApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
