@@ -2,16 +2,12 @@
 
 /**
  * @ngdoc function
- * @name TrafficApp.controller:MainCtrl
+ * @name GetYourWeather.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the TrafficApp
+ * Controller of the GetYourWeather
  */
-angular.module('TrafficApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+ angular.module('GetYourWeather')
+   .controller('MainCtrl', function ($scope, current) {
+     $scope.current = current.query();
+   });
