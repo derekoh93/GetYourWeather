@@ -3,7 +3,7 @@
 describe('Service: current', function () {
 
   // load the service's module
-  beforeEach(module('TrafficApp'));
+  beforeEach(module('GetYourWeather'));
 
   // instantiate service
   var current;

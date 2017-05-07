@@ -2,22 +2,24 @@
 
 /**
  * @ngdoc service
- * @name TrafficApp.current
+ * @name GetYourWeather.current
  * @description
  * # current
- * Factory in the TrafficApp.
+ * Factory in the GetYourWeather.
  */
-angular.module('TrafficApp')
-  .factory('current', function () {
-    // Service logic
-    // ...
+ angular.module('GetYourWeather')
+   .factory('current', function ($resource) {
+     // Service logic
+     // ...
 
-    var meaningOfLife = 42;
-
-    // Public API here
-    return {
-      someMethod: function () {
-        return meaningOfLife;
-      }
-    };
-  });
+     // Public API here
+     return $resource('https://maps.googleapis.com/maps/api/js?key=AIzaSyAqrPxA4eikgVFXND0ZmWR8laiicmNuPTs', {}, {
+       query: {
+         method:'GET',
+         params:{
+           location: 'Seattle,us'
+         },
+         isArray:false
+       }
+     });
+   });

@@ -41,7 +41,7 @@ module.exports = function (grunt) {
           },
           pages: {
             options: {
-              remote: 'git@github.com:derekoh93/TrafficApp.git',
+              remote: 'git@github.com:derekoh93/GetYourWeather.git',
               branch: 'gh-pages'
             }
           }

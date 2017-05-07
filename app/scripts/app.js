@@ -1,14 +1,14 @@
 'use strict';
 /**
  * @ngdoc overview
- * @name TrafficApp
+ * @name GetYourWeather
  * @description
- * # TrafficApp
+ * # GetYourWeather
  *
  * Main module of the application.
  */
 angular
-  .module('TrafficApp', [
+  .module('GetYourWeather', [
     'ngAnimate',
     'ngAria',
     'ngCookies',

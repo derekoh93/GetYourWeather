@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name TrafficApp.controller:AboutCtrl
+ * @name GetYourWeather.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the TrafficApp
+ * Controller of the GetYourWeather
  */
-angular.module('TrafficApp')
+angular.module('GetYourWeather')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

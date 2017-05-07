@@ -1,5 +1,5 @@
 {
-  "name": "traffic-app",
+  "name": "get-your-weather-app",
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.4.0",
@@ -17,7 +17,7 @@
     "angular-mocks": "^1.4.0"
   },
   "appPath": "app",
-  "moduleName": "TrafficApp",
+  "moduleName": "GetYourWeatherApp",
   "overrides": {
     "bootstrap": {
       "main": [
