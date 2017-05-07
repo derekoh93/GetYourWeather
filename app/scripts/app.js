@@ -1,5 +1,5 @@
 'use strict';
-
+var myApp = angular.module('myApp', ['ngMap']);
 /**
  * @ngdoc overview
  * @name TrafficApp
