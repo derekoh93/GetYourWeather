@@ -45,6 +45,6 @@
     "test": "karma start test\\karma.conf.js"
   },
   "dependencies": {
-    "angular-route": "^1.4.0"
+    "angular-route": "^1.6.1"
   }
 }
