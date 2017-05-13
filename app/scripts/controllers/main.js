@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the GetYourWeather
  */
- angular.module('GetYourWeatherApp')
+ angular.module('GetYourWeather')
    .controller('MainCtrl', function ($scope, citysearch) {
      $scope.citiesFound = citysearch.find();
 
