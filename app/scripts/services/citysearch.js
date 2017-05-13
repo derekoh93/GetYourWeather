@@ -9,7 +9,7 @@
  */
 
 
- angular.module('GetYourWeatherApp')
+ angular.module('GetYourWeather')
    .factory('citysearch', function ($resource) {
      // Service logic
      // ...
