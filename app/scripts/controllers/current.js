@@ -14,7 +14,8 @@
      $scope.currentWeather = current.query({
          cityID: $routeParams.cityID
      });
-     $scope.saveCity = function(city){
+
+  $scope.saveCity = function(city){
          var cityData = {
              'name': city.name,
              'id': city.id
