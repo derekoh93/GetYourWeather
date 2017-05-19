@@ -15,7 +15,7 @@
          cityID: $routeParams.cityID
      });
 
-  $scope.saveCity = function(city){
+     $scope.saveCity = function(city){
          var cityData = {
              'name': city.name,
              'id': city.id
@@ -26,16 +26,25 @@
              // Check to make sure we haven't already saved the city.
              var save = true;
              for (var i=0; i < $localStorage.savedCities.length; i++){
-                 if ($localStorage.savedCities[i].id == cityData.id) {
+                 if ($localStorage.savedCities[i].id === cityData.id) {
                      // this is a duplicate, so don't save
                      save = false;
                  }
              }
-             if (save==true){
+             if (save===true){
                  $localStorage.savedCities.push(cityData);
+                 // Add object to trigger messages
+                 $scope.citySaved = {
+                     'success': true
+                 };
              } else {
                  console.log('city already saved');
+                 // Add object to trigger messages
+                 $scope.citySaved = {
+                     'duplicate': true
+                 };
              }
          }
      };
-   });
+
+       });
