@@ -19,6 +19,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  background-color: lightblue;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -95,16 +96,23 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+  /* stlying for forecast */
 }
 dl.weather-forecast.ng-scope {
-  background-color: #00FEFE;
+  background-color: #e7e7e7;
   float: left;
-  width: 300px;
+  width: 150px;
   height: 150px;
   margin: 10px;
   border: 3px solid black;
 }
+/* styling for nav */
 .navbar {
   background-color: #e7e7e7;
   text-transform: uppercase;
+}
+/* styling for jumbotron */
+.jumbotron {
+  background-color: lightblue;
+  border: 3px solid black;
 }
