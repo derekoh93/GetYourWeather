@@ -78,7 +78,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   /* Remove the padding we set earlier */
@@ -101,8 +101,8 @@ body {
 dl.weather-forecast.ng-scope {
   background-color: #e7e7e7;
   float: left;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 170px;
   margin: 10px;
   border: 3px solid black;
 }
