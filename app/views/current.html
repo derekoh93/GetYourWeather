@@ -14,13 +14,13 @@
     <dt>Currently</dt>
     <dd>{{currentWeather.weather[0].main}}</dd>
     <dd>{{currentWeather.weather[0].description}}</dd>
+    <div class="icon"><img src="http://openweathermap.org/img/w/{{currentWeather.weather[0].icon}}.png" alt="icon" style="width:75px;height:75px;"></div>
     <dt>Temperature</dt>
     <dd>{{currentWeather.main.temp}} &deg;F</dd>
     <dt>Wind</dt>
     <dd>{{currentWeather.wind.speed}} mph at {{currentWeather.wind.deg}} &deg;</dd>
     <dt>Clouds</dt>
     <dd>{{currentWeather.clouds.all}}%</dd>
-    <div class="icon"><img src="http://openweathermap.org/img/w/{{currentWeather.weather[0].icon}}.png" alt="icon" style="width:128px;height:128px;"></div>
 </dl>
 
 <p><a ng-href="#!/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 16-day Forecast</a></p>

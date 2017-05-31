@@ -3,9 +3,9 @@
     <dt>Forecast for {{weather.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <dd>{{weather.weather[0].main}}</dd>
     <dd>{{weather.weather[0].description}}</dd>
+    <div class="forecast-icon"><img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" style="width:50px;height:50px;"></div>
     <dt>Temperature</dt>
     <dd>Min: {{weather.temp.min}} &deg;F Max: {{weather.temp.max}} &deg;F</dd>
-    <div class="forecast-icon"><img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" style="width:75px;height:75px;"></div>
 </dl>
 
-<br><p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
+<p><a ng-href="#!/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
